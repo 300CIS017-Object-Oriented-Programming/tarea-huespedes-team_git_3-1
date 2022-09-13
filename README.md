@@ -35,6 +35,8 @@ Se esperan las siguientes funcionalidades para el prototipo
   * Su programa debe seguir el estándar de codificación camelCase. Tener nombres claros, y calidad suficientes para estudiantes que llevan casi año y medio programando.
   * De formato al código fuente y corrija los errores menores que el revisor estático de CLION detecte antes de subir su código fuente al repositorio. 
   * Modifique el .gitignore para ignorar todos los archivos de trabajo que no se deberían considerar en el proyecto
+### UML
+![UML.png](UML.png)
 
 
   
