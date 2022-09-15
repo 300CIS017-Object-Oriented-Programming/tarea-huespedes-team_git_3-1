@@ -6,11 +6,9 @@
 #define TAREA_HUESPEDES_TEAM_GIT_3_1_ADMINISTRACION_H
 
 
-
 class Administracion {
 
 };
-
 
 
 #endif //TAREA_HUESPEDES_TEAM_GIT_3_1_ADMINISTRACION_H
