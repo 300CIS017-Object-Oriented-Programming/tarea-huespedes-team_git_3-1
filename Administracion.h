@@ -1,0 +1,16 @@
+//
+// Created by santi on 15/09/2022.
+//
+
+#ifndef TAREA_HUESPEDES_TEAM_GIT_3_1_ADMINISTRACION_H
+#define TAREA_HUESPEDES_TEAM_GIT_3_1_ADMINISTRACION_H
+
+
+
+class Administracion {
+
+};
+
+
+
+#endif //TAREA_HUESPEDES_TEAM_GIT_3_1_ADMINISTRACION_H
