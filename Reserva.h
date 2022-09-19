@@ -18,6 +18,7 @@ public:
     Reserva();
     const string &getfechaInicial() const;
     const string &getfechaFinal() const;
+
     void setfechaInicial(const string &fechaInicial);
     void setfechaFinal(const string &fechaFinal);
 
