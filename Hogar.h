@@ -9,8 +9,26 @@
 #include <cstring>
 #include <vector>
 
-class Hogar {
+using std::cin;
+using std::cout;
+using std::string;
+
+class Hogar
+{
 private:
+    long idHogar;
+    int cantCamas;
+    bool permiteBebes;
+    string direccion;
+    string descripcion;
+
+public:
+    Hogar();
+    void setIdHogar(long id);
+    void setCantCamas(int cant);
+    void setDireccion(string dir);
+    void setDescripcion(string descrip);
+    void mostrarDatos();
 
 };
 

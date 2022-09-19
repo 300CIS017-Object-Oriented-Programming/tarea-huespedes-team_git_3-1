@@ -1,3 +1,4 @@
+
 # Codificación caso de huéspedes
 > Ejercicio de diseño y programación orientada a objetos con C++. 
 Enunciado creado para el curso de Programación Orientada a Objetos - Pontificia Universidad Javeriana - Cali
