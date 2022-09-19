@@ -24,10 +24,13 @@ private:
 
 public:
     Hogar();
+    virtual ~Hogar();
+    Hogar(long id, int cant, const string &dir, const string &descrip, bool bebes);
     void setIdHogar(long id);
     void setCantCamas(int cant);
-    void setDireccion(string dir);
-    void setDescripcion(string descrip);
+    void setDireccion(const string &dir);
+    void setPermiteBebes(bool bebes);
+    void setDescripcion(const string &descrip);
     void mostrarDatos();
 
 };
