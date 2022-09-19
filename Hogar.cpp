@@ -13,7 +13,7 @@ Hogar::Hogar() {
     descripcion = "";
 }
 
-Hogar::Hogar(long id, int cant, const string &dir, const string &descrip, bool bebes) : idHogar(id), direccion(dir), cantCamas(cant), permiteBebes(bebes), descripcion(descrip){
+Hogar::Hogar(long id, int cant, string &dir, string &descrip, bool bebes) : idHogar(id), direccion(dir), cantCamas(cant), permiteBebes(bebes), descripcion(descrip){
     cout << "Entra constructor de 5 parametros\n";
 }
 
@@ -25,7 +25,7 @@ void Hogar::setCantCamas(int cant) {
     Hogar::cantCamas = cant;
 }
 
-void Hogar::setDescripcion(const string &descrip) {
+void Hogar::setDescripcion(string &descrip) {
     Hogar::descripcion = descrip;
 }
 
@@ -33,7 +33,7 @@ void Hogar::setPermiteBebes(bool bebes) {
     Hogar::permiteBebes = bebes;
 }
 
-void Hogar::setDireccion(const string &dir) {
+void Hogar::setDireccion( string &dir) {
     Hogar::direccion = dir;
 }
 
@@ -46,5 +46,4 @@ void Hogar::mostrarDatos() {
 }
 
 Hogar::~Hogar() {
-
 }
