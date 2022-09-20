@@ -15,6 +15,7 @@ private:
     string nombre;
     string sexo;
     int puntaje;
+    string fechaNacimiento;
 public:
     Persona();
 

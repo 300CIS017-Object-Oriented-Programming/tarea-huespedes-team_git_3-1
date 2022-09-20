@@ -10,6 +10,7 @@ Persona::Persona() {
     nombre = "";
     sexo = "";
     puntaje = 0;
+    fechaNacimiento = "";
 }
 
 long Persona::getidPersona() const {
