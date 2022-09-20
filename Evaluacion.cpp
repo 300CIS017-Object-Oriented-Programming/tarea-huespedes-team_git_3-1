@@ -37,5 +37,5 @@ void Evaluacion::setcomentario(const std::string &comentario) {
 }
 
 Evaluacion::~Evaluacion() {
-    
+
 }
