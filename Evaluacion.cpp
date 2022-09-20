@@ -9,7 +9,17 @@ Evaluacion::Evaluacion() {
     fecha = "";
     calificacion = 0;
     comentario = "";
+    evaluado = nullptr;
+    evaluador = nullptr;
+}
 
+Evaluacion::Evaluacion(std::string &fecha, int califica, std::string &comentario, Propietario *evaluado, Huesped *evaluador)
+{
+    this->fecha = fecha;
+    this->calificacion = califica;
+    this->comentario = comentario;
+    this->evaluado = evaluado;
+    this->evaluador = evaluador;
 }
 
 const string &Evaluacion::getfecha() const {
