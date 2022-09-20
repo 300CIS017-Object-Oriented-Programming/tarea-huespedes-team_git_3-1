@@ -18,7 +18,7 @@ private:
     string fechaNacimiento;
 public:
     Persona();
-
+    Persona(long id, string nombre1,string sexo1, int puntaje1, string fechaNaci);
     long getidPersona() const;
     const string &getnombre() const;
     const string &getsexo() const;

@@ -8,7 +8,7 @@
 #include "Hogar.h"
 
 #include <iostream>
-#include <cstring>
+#include <string>
 #include <vector>
 
 using std::cin;
@@ -23,7 +23,7 @@ private:
 
 public:
     Propietario();
-    Propietario(Hogar* hogar, bool disponible);
+    Propietario(long, string&, string& ,int,string& ,Hogar* hogar1, bool disponible1);
     bool getDisponible() const;
     void setDisponible(bool disponible1);
     Hogar* getHogar() const;

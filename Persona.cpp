@@ -13,6 +13,9 @@ Persona::Persona() {
     fechaNacimiento = "";
 }
 
+Persona::Persona(long id, std::string nombre1, std::string sexo1, int puntaje1, std::string fechaNaci) : idPersona(id), nombre(nombre1), sexo(sexo1), puntaje(puntaje1), fechaNacimiento(fechaNaci)
+{}
+
 long Persona::getidPersona() const {
     return idPersona;
 }
