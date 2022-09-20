@@ -15,6 +15,8 @@ private:
 public:
     Huesped();
 
+    Huesped(string infoHospital,string ciudad);
+
     const string &getinfoHospital() const;
     const string &getciudad() const;
 

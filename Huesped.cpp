@@ -10,6 +10,12 @@ Huesped::Huesped() {
     ciudad = "";
 }
 
+Huesped::Huesped(std::string infoHospital, std::string ciudad) : Persona(idPersona,nombre, sexo, puntaje, fechaNacimiento) {
+
+    this->infoHospital = infoHospital;
+    this->ciudad=ciudad;
+}
+
 const string &Huesped::getinfoHospital() const {
     return infoHospital;
 }
