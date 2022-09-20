@@ -10,7 +10,7 @@ Huesped::Huesped() {
     ciudad = "";
 }
 
-Huesped::Huesped(std::string infoHospital, std::string ciudad) : Persona(idPersona,nombre, sexo, puntaje, fechaNacimiento) {
+Huesped::Huesped(long id, std::string &nombre, std::string &sexo, int puntaje, std::string &fechaNaci, std::string infoHospital, std::string ciudad) : Persona(id,nombre, sexo, puntaje, fechaNaci) {
 
     this->infoHospital = infoHospital;
     this->ciudad=ciudad;
