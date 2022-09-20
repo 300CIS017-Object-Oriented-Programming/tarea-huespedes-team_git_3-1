@@ -8,6 +8,8 @@
 #include "Evaluacion.h"
 #include "Huesped.h"
 #include <unordered_map>
+#include <cstring>
+#include <vector>
 
 using namespace std;
 
@@ -17,6 +19,7 @@ private:
     unordered_map<string,Persona*> usuarios;
     unordered_map<string, Evaluacion*> evaluacion;
     unordered_map<int, Reserva*> reserva;
+    unordered_map<int, Hogar*> hogares;
 
 public:
     Administracion();
@@ -24,6 +27,8 @@ public:
     void agregarInfoHogar();
 
     void crearReserva();
+
+    void crearUsuario();
 
     void liberarReserva();
     void mostrarReservas();

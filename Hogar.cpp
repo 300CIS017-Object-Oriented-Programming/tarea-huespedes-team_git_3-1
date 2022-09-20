@@ -17,6 +17,26 @@ Hogar::Hogar(long id, int cant, string &dir, string &descrip, bool bebes) : idHo
     cout << "Entra constructor de 5 parametros\n";
 }
 
+long Hogar::getidHogar() const {
+    return idHogar;
+}
+
+int Hogar::getcantCamas() const {
+    return cantCamas;
+}
+
+const string &Hogar::getdireccion() const {
+    return direccion;
+}
+
+bool Hogar::getpermiteBebes() const {
+    return permiteBebes;
+}
+
+const string &Hogar::getdescripcion() const {
+    return descripcion;
+}
+
 void Hogar::setIdHogar(long id) {
     Hogar::idHogar = id;
 }

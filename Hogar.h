@@ -26,6 +26,13 @@ public:
     Hogar();
     virtual ~Hogar();
     Hogar(long id, int cant, string &dir, string &descrip, bool bebes);
+
+    long getidHogar() const;
+    const string &getdireccion() const;
+    int getcantCamas() const;
+    bool getpermiteBebes() const;
+    const string &getdescripcion() const;
+
     void setIdHogar(long id);
     void setCantCamas(int cant);
     void setDireccion(string &dir);
