@@ -45,7 +45,7 @@ void Hogar::setCantCamas(int cant) {
     Hogar::cantCamas = cant;
 }
 
-void Hogar::setDescripcion(string &descrip) {
+void Hogar::setDescripcion(const string &descrip) {
     Hogar::descripcion = descrip;
 }
 
@@ -53,7 +53,7 @@ void Hogar::setPermiteBebes(bool bebes) {
     Hogar::permiteBebes = bebes;
 }
 
-void Hogar::setDireccion( string &dir) {
+void Hogar::setDireccion(const string &dir) {
     Hogar::direccion = dir;
 }
 

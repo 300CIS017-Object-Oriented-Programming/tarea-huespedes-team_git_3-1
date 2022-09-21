@@ -35,9 +35,9 @@ public:
 
     void setIdHogar(long id);
     void setCantCamas(int cant);
-    void setDireccion(string &dir);
+    void setDireccion(const string &dir);
     void setPermiteBebes(bool bebes);
-    void setDescripcion(string &descrip);
+    void setDescripcion(const string &descrip);
     void mostrarDatos();
 
 };

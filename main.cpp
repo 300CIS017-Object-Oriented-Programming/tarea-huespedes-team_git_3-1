@@ -12,41 +12,36 @@ void menu(Administracion & administracion)
     do
     {
         cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
-
-
-
+        cout << "1. Agregar Usuario \n";
+        cout << "2. Agregar Hogar \n";
+        cout << "3. Agregar Reserva \n";
+        cout << "4. Mostrar Reservas \n";
+        cout << "5. Liberar Reservas \n";
+        cout << "6. Evaluacion \n";
+        cout << "-1. Salir\n";
         cin >> opc;
 
         switch (opc)
         {
             case 1:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
+                administracion.crearUsuario();
                 break;
             case 2:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
+                administracion.agregarInfoHogar();
                 break;
             case 3:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
+                administracion.crearReserva();
                 break;
             case 4:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
+                administracion.mostrarReservas();
                 break;
             case 5:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
+                administracion.liberarReserva();
                 break;
             case 6:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
+                administracion.agregarEvaluacion();
                 break;
             case 7:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
-                break;
-            case 8:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
-                break;
-            case 9:
-                cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
-                break;
-            case 10:
                 cout << "\n ****Bienvenidos a Airbnb Manizales  ****\n";
                 break;
             default:
