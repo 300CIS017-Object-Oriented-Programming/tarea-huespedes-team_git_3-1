@@ -7,6 +7,7 @@ using namespace std;
 Administracion::Administracion() {
     cout << " Contructor por defecto\n";
     idReserva = 0;
+    inicializarDatos();
 }
 
 void Administracion::inicializarDatos()

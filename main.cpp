@@ -52,7 +52,6 @@ void menu(Administracion & administracion)
 
 int main()
 {
-
     Administracion administracion;
     menu(administracion);
     return 0;
