@@ -109,20 +109,21 @@ void Administracion::crearReserva() {
     getline(cin,fechaFinal);
     cout << "indique el id del propietario\n";
     cin >> idPropietario;
-    //if (propietarios.find(idPropietario) != propietarios.end()){
-    //    cout << "No existe este propietario  \n";
-   // } else{
+    if (propietarios.find(idPropietario) == propietarios.end()){
+        cout << "No existe este propietario  \n";
+    } else{
         propTempP = propietarios[idPropietario];
-    //}
+    }
     cout << "indique el id del Huesped\n";
     cin >> idHuesped;
-   // if(huespedes.find(idHuesped) != huespedes.end()){
-       // cout << "No existe este propietario  \n";
-   // }else{
+    if(huespedes.find(idHuesped) == huespedes.end()){
+        cout << "No existe este propietario  \n";
+    }else{
        propTempH = huespedes[idHuesped];
-    //}
+    }
     // FIXME: Corregir como entran los datos a reserva
     auto *propTemp = new Reserva(fechaIncial, fechaFinal,idReserva++, propietarios[idPropietario], huespedes[idHuesped]);
+
     reserva[propTemp->getidReserva()]= propTemp;
 
 }
