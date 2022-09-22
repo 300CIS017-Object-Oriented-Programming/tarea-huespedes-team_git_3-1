@@ -25,7 +25,7 @@ void Administracion::inicializarDatos()
 
     // Inicializar Huespedes
     huesp1->setnombre("Santiago");
-    huesp1->setidPersona(123456);
+    huesp1->setidPersona(1);
     huesp1->setsexo("Hombre");
     huesp1->setinfoHospital("Hospital Cruz");
     huesp1->setciudad("Cali");
@@ -38,7 +38,7 @@ void Administracion::inicializarDatos()
     // Inicializar Propietarios
 
     prop1->setnombre("Arthur");
-    prop1->setidPersona(325421);
+    prop1->setidPersona(2);
     prop1->setsexo("Hombre");
     prop1->setDisponible(true);
     prop1->setHogar(hogar1);
@@ -99,8 +99,8 @@ void Administracion::crearReserva() {
     string fechaFinal;
     long idPropietario;
     long idHuesped;
-    auto *propTempP = new Propietario();
-    auto *propTempH = new Huesped();
+    Propietario *propTempP;
+    Huesped *propTempH;
     cout << "indique el dia en que quiere quedarse en el airbnb\n";
     cin.ignore();
     getline(cin, fechaIncial);
@@ -111,19 +111,19 @@ void Administracion::crearReserva() {
     cin >> idPropietario;
     if (propietarios.find(idPropietario) == propietarios.end()){
         cout << "No existe este propietario  \n";
-    } else{
+    }else{
         propTempP = propietarios[idPropietario];
     }
     cout << "indique el id del Huesped\n";
     cin >> idHuesped;
     if(huespedes.find(idHuesped) == huespedes.end()){
-        cout << "No existe este propietario  \n";
+        cout << "No existe este Huesped  \n";
     }else{
        propTempH = huespedes[idHuesped];
     }
+    cout << "Nombre propietario" << propTempH->getnombre() <<"\n";
     // FIXME: Corregir como entran los datos a reserva
-    auto *propTemp = new Reserva(fechaIncial, fechaFinal,idReserva++, propietarios[idPropietario], huespedes[idHuesped]);
-
+    auto *propTemp = new Reserva(fechaIncial, fechaFinal,idReserva++, propTempP, propTempH);
     reserva[propTemp->getidReserva()]= propTemp;
 
 }
