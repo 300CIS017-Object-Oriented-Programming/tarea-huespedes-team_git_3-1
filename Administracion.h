@@ -17,9 +17,10 @@ class Administracion {
 
 private:
     int idReserva;
+    int idEvaluacion;
     unordered_map<long,Huesped*> huespedes;
     unordered_map<long,Propietario*> propietarios;
-    unordered_map<string, Evaluacion*> evaluacion;
+    unordered_map<int, Evaluacion*> evaluacion;
     unordered_map<int, Reserva*> reserva;
     unordered_map<int, Hogar*> hogares;
     void inicializarDatos();
@@ -35,8 +36,6 @@ public:
     void liberarReserva();
     void mostrarReservas();
     void agregarEvaluacion();
-    void mostrarPropietarios();
-    void mostrarHuespedes();
 
 
 

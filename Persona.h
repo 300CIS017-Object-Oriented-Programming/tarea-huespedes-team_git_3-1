@@ -14,7 +14,7 @@ private:
     long idPersona;
     string nombre;
     string sexo;
-    int puntaje;
+    float puntaje;
     string fechaNacimiento;
 public:
     Persona();

@@ -32,6 +32,20 @@ Hogar* Propietario::getHogar() const
     return hogar;
 }
 
+void Propietario::calcularPuntaje(Propietario * Prop, int puntaje)
+{
+    float prom;
+    if (Prop->getpuntaje() == 0)
+    {
+        Prop->setpuntaje(puntaje);
+    }
+    else
+    {
+        prom = (Prop->getpuntaje() + puntaje) / 2;
+        Prop->setpuntaje(prom);
+    }
+}
+
 bool Propietario::getDisponible() const
 {
     return disponible;

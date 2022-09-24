@@ -49,6 +49,8 @@ void Reserva::mostrarDatosReserva() {
     cout << "El Huesped: " << huesped->getnombre() << "\n";
 }
 
+
+
 Reserva::~Reserva() {
 
 }

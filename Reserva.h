@@ -29,6 +29,7 @@ public:
     void setfechaFinal(const string &fechaFinal);
     void setidReserva(int idReserva);
 
+
     void mostrarDatosReserva();
 
     virtual ~Reserva();

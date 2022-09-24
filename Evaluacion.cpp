@@ -13,7 +13,7 @@ Evaluacion::Evaluacion() {
     evaluador = nullptr;
 }
 
-Evaluacion::Evaluacion(std::string &fecha, int califica, std::string &comentario, Propietario *evaluado, Huesped *evaluador)
+Evaluacion::Evaluacion(std::string &fecha, float califica, std::string &comentario, Propietario *evaluado, Huesped *evaluador)
 {
     this->fecha = fecha;
     this->calificacion = califica;
@@ -26,7 +26,7 @@ const string &Evaluacion::getfecha() const {
     return fecha;
 }
 
-double Evaluacion::getcalificacion() const {
+float Evaluacion::getcalificacion() const {
     return calificacion;
 }
 
@@ -38,7 +38,7 @@ void Evaluacion::setfecha(const std::string &fecha) {
     Evaluacion::fecha = fecha;
 }
 
-void Evaluacion::setcalificacion(double calificacion) {
+void Evaluacion::setcalificacion(float calificacion) {
     Evaluacion::calificacion = calificacion;
 }
 

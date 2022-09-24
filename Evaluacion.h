@@ -13,20 +13,20 @@ using namespace std;
 class Evaluacion {
 private:
     string fecha;
-    int calificacion;
+    float calificacion;
     string comentario;
     Propietario *evaluado;
     Huesped* evaluador;
 
 public:
     Evaluacion();
-    Evaluacion(string&, int, string&,Propietario* evaluado, Huesped* evaluador);
+    Evaluacion(string&, float evaluacion, string&,Propietario* evaluado, Huesped* evaluador);
     const string &getfecha() const;
-    double getcalificacion() const;
+    float getcalificacion() const;
     const string &getcomentario() const;
 
     void setfecha(const string &fecha);
-    void setcalificacion( double calificacion);
+    void setcalificacion( float calificacion);
     void setcomentario(const string &comentario);
 
     virtual ~Evaluacion();

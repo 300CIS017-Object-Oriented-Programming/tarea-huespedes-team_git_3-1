@@ -28,6 +28,7 @@ public:
     void setDisponible(bool disponible1);
     Hogar* getHogar() const;
     void setHogar(Hogar* hogar1);
+    void calcularPuntaje(Propietario*, int );
 
 };
 

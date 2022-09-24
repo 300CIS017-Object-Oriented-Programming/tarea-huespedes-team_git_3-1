@@ -1,12 +1,13 @@
 
 #include "Administracion.h"
-#include <cstring>
+
 
 using namespace std;
 
 Administracion::Administracion() {
     cout << " Contructor por defecto\n";
     idReserva = 0;
+    idEvaluacion = 0;
     inicializarDatos();
 }
 
@@ -123,7 +124,6 @@ void Administracion::crearReserva() {
        propTempH = huespedes[idHuesped];
     }
     cout << "Nombre propietario" << propTempH->getnombre() <<"\n";
-    // FIXME: Corregir como entran los datos a reserva
     auto *propTemp = new Reserva(fechaIncial, fechaFinal,idReserva++, propTempP, propTempH);
     reserva[propTemp->getidReserva()]= propTemp;
 
@@ -138,7 +138,6 @@ void Administracion::crearUsuario()
     string fechaNaci;
     string clinica;
     string ciudad;
-    bool disponibilidad;
     cout <<"Identificacion: \n";
     cin >> id;
     cout << "Nombre:\n";
@@ -203,10 +202,38 @@ void Administracion::mostrarReservas() {
     }
 }
 
-void Administracion::mostrarHuespedes() {
-
-}
-
 void Administracion::agregarEvaluacion() {
+    long idPropietario;
+    long idHuesped;
+    string fecha;
+    float calificacion;
+    string comentario;
+    Propietario * propTempP;
+    Huesped * propTempH;
+    cout << "Digita el id del propietario: \n";
+    cin >> idPropietario;
+    cout << "Digita el id de huesped: \n";
+    cin >> idHuesped;
+    cout << "Digita la fecha de la calificacion: \n";
+    cin.ignore();
+    getline(cin, fecha);
+    cout << "Digita la calificacion que quieres dar: \n";
+    cin >> calificacion;
+    cout << "Pon un comentario que quieras dejar en la evaluacion: \n";
+    cin.ignore();
+    getline(cin, comentario);
+    if (propietarios.find(idPropietario) == propietarios.end()){
+        cout << "No existe este propietario  \n";
+    }else{
+        propTempP = propietarios[idPropietario];
+    }
+    if(huespedes.find(idHuesped) == huespedes.end()){
+        cout << "No existe este Huesped  \n";
+    }else{
+        propTempH = huespedes[idHuesped];
+    }
+    auto *propEva = new Evaluacion(fecha,calificacion,comentario,propTempP, propTempH);
+    evaluacion[idEvaluacion++] = propEva;
+    propTempP->calcularPuntaje(propTempP, calificacion);
 
 }
