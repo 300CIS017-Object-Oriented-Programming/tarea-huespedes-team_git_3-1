@@ -1,3 +1,4 @@
+
 # Codificación caso de huéspedes
 > Ejercicio de diseño y programación orientada a objetos con C++. 
 Enunciado creado para el curso de Programación Orientada a Objetos - Pontificia Universidad Javeriana - Cali
@@ -35,6 +36,9 @@ Se esperan las siguientes funcionalidades para el prototipo
   * Su programa debe seguir el estándar de codificación camelCase. Tener nombres claros, y calidad suficientes para estudiantes que llevan casi año y medio programando.
   * De formato al código fuente y corrija los errores menores que el revisor estático de CLION detecte antes de subir su código fuente al repositorio. 
   * Modifique el .gitignore para ignorar todos los archivos de trabajo que no se deberían considerar en el proyecto
+### UML
+![UML.png](UML.png)
+* [Link del UML](https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Diagrama%20sin%20t%C3%ADtulo.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FSebastian-Dow%2FcasoHuespedes%2Fmain%2FDiagrama%2520sin%2520t%25C3%25ADtulo.drawio) 
 
 
   
